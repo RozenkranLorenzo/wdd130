@@ -1,26 +1,54 @@
+main {
+    max-width: 840px;
+    
+}
+
+main p, aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 2px solid #ccc;
+    padding: 1rem;
+    background-color: rgb(79, 194, 114);
+    align-content: center;
+}
+
 nav {
-    background-color: darkblue;
+    background-color: rgb(79, 194, 114);
     padding: 10px;
 }
 
 nav a {
-    color: white;
+    color: rgb(7, 7, 7);
     display: block;
     padding: 20px;
 }
 
 h1 {
-    color: darkblue;
+    color: rgb(0, 139, 42);
 }
 
-img {
+main img {
+    float: left;
     width: 150px;
     height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+    margin-right: 20px;
+    border: 1px solid rgb(79, 194, 114);
+    box-shadow: 0 0 30px rgb(79, 194, 114);
 }
 
 p {
-    padding: 10px;
+    padding: 0;
+}
+
+aside img {
+    float: inline-start;
+    width: 150px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+footer {
+    margin-top: 15px;
+    border-top: 1px solid rgb(79, 194, 114);
+    text-align: center;
 }
