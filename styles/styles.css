@@ -1,3 +1,7 @@
+:root {
+    --background-color: rgb(79, 194, 114);
+}
+
 main {
     max-width: 840px;
     
@@ -8,12 +12,12 @@ main p, aside {
     margin: 1rem;
     border: 2px solid #ccc;
     padding: 1rem;
-    background-color: rgb(79, 194, 114);
+    background-color: var(--background-color);
     align-content: center;
 }
 
 nav {
-    background-color: rgb(79, 194, 114);
+    background-color: var(--background-color);
     padding: 10px;
 }
 
