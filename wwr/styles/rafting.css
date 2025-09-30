@@ -11,11 +11,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: var(--accent1-color);
+    color: #fff;
 }
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
 }
 
 header, main, footer {
@@ -23,18 +24,66 @@ header, main, footer {
     margin: 0 auto;
 }
 
-h1, h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
+header {
+    display: grid;
+    grid-template-columns: 300px auto;
+    place-items: center;
 }
 
-nav, p, section, article {
+nav a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+}
+
+p, section, article {
     margin: 16px;
     padding: 8px;
 }
 
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    background-color: var(--accent2-color);
+    padding: 16px;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    opacity: 0.7;
+}
+
+h2 {
+    text-align: center;
+}
+
+section p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+/* class section */
+
 .socialmedia a {
     text-decoration: none;
+}
+
+.photos {
+    display: grid;
+    grid-row: auto auto auto;
 }
 
 .hero {
@@ -47,22 +96,6 @@ nav, p, section, article {
     height: auto;
 }
 
-h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent2-color);
-}
-
-h2 {
-    padding: 16px;
-    text-align: center;
-    background-color: var(--accent2-color);
-}
-
 .hero article {
     position: absolute;
     margin: 100px;
@@ -71,10 +104,15 @@ h2 {
     right: -50px;
     opacity: .6;
     color: #fff;
-
 }
 
 .hero article img {
     float: right;
     width: 100px;
+}
+
+.navigation {
+    display: flex;
+    gap: 20px;
+    font-size: large;
 }
