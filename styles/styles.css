@@ -77,8 +77,19 @@ header, .grid, footer {
 
 .grid {
   display: grid;
-  grid-template-columns: auto 100px;
+  align-items: center;
 }
+  main {
+    grid-column: 2 / 3;
+    margin: 1rem;
+  }
+
+  aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
 
 footer {
   margin-top: 15px;
