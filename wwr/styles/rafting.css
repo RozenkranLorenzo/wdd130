@@ -21,7 +21,6 @@ body {
 
 header {
     display: grid;
-    font-size: ;
     grid-template-columns: 300px auto;
     place-items: center;
 }
