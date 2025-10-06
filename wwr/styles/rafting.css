@@ -19,15 +19,15 @@ body {
     font-family: var(--body-font);
 }
 
-header, main, footer {
-    width: 840px;
-    margin: 0 auto;
-}
-
 header {
     display: grid;
+    font-size: ;
     grid-template-columns: 300px auto;
     place-items: center;
+}
+
+header img {
+    margin: 0;
 }
 
 nav a {
@@ -39,7 +39,7 @@ nav a:hover {
     background-color: var(--secondary-color);
 }
 
-p, section, article {
+article {
     margin: 16px;
     padding: 8px;
 }
@@ -63,27 +63,50 @@ h2 {
     text-align: center;
 }
 
+img {
+    margin: 20px;
+}
+
 section p {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    margin: 20px;
 }
 
-footer {
-    display: flex;
+footer div {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
     justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+footer p {
+    grid-column: 2;
+    margin: auto;
 }
 
 /* class section */
 
-.socialmedia a {
+.socialmedia {
     text-decoration: none;
+    padding: auto;
 }
 
-.photos {
-    display: grid;
-    grid-row: auto auto auto;
+.socialmedia a img {
+    justify-content: space-evenly;
+    margin: 0;
+}
+
+#gallery {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.images {
+    padding: 0 10px;
 }
 
 .hero {
@@ -94,6 +117,7 @@ footer {
     display: block;
     width: 100%;
     height: auto;
+    margin: 0;
 }
 
 .hero article {
