@@ -17,6 +17,7 @@
 
 body {
     font-family: var(--body-font);
+
 }
 
 header {
@@ -137,5 +138,5 @@ footer p {
 .navigation {
     display: flex;
     gap: 20px;
-    font-size: large;
+    font-size: 25px;
 }
